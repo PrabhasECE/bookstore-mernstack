@@ -23,13 +23,16 @@ By following this order, you can effectively manage CORS and ensure that your Ex
 // option1: Allow all origins with default of cors(*)
 //app.use(cors());
 // option2: Allow custom origins
+app.use(cors());
+
+/*
 app.use(cors({
     //origin: 'http://localhost:5173',
     origin: "https://keen-lollipop-638543.netlify.app/",
   // methods: ['GET', 'POST', 'PUT', 'DELETE'],
-   // allowedHeaders: ['Content-Type'],
+   // allowedHeaders: ['Content-Type']  ,
   })
-);
+);*/
 /*
 app.get("/", (request,response) => {
     console.log(request);
