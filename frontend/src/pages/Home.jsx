@@ -10,7 +10,6 @@ const Home = () => {
     const [books, setBooks] = useState([]);
     const [loading, setLoading] = useState(false);
     const [showType, setShowType] = useState('card');
-/*
     useEffect(() => {
         setLoading(true);
         axios
@@ -23,12 +22,11 @@ const Home = () => {
                 console.log(error);
                 setLoading(false);
             })
-    }, []);*/
+    }, []);
 
     return (
         <div className='p-4'>
-            <h1>Bokka</h1>
-          {/*  <div className='flex justify-center items-center gap-x-4'>
+            <div className='flex justify-center items-center gap-x-4'>
                 <button onClick={() => setShowType('table')} className='bg-sky-300 hover:bg-sky-600 px-4 py-1 rounded-lg'>
                     Table
                 </button>
@@ -43,7 +41,7 @@ const Home = () => {
                 </Link>
             </div>
             {loading ? (<Spinner />):showType === 'table' ? (<BookTable books={books} />): (<BookCard books={books} />)}
-    */}</div>
+    </div>
     )
 }
 
