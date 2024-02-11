@@ -27,7 +27,7 @@ By following this order, you can effectively manage CORS and ensure that your Ex
 
 app.use(cors({
     //origin: 'http://localhost:5173',
-    origin: "https://mernstack-bookstore.netlify.app/",
+    origin: "https://mernstack-bookstore.netlify.app",
   // methods: ['GET', 'POST', 'PUT', 'DELETE'],
    // allowedHeaders: ['Content-Type']  ,
   })
